@@ -26,8 +26,36 @@ html
         <!-- iOS Safari -->
         meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 
-    body
+    body.page
+
+        header.header.page__header
+            div.header__inner
+                div.menu
+                    div.hamburger.menu__hamburger
+                        div.hamburger__box
+                            div.hamburger__inner
+                    div.menu__text Меню
+                div.header__title
+                    span.text.text_uppercase.text_bold Группа компаний Emerald
+                    span.text Организация свадебных торжеств
+                div.logo
+                    img.logo__image(src="../img/header__logo.png" srcset="../img/header__logo@2x.png 2x" alt="Company logo")
+                div.telephone
+                    div.telephone__icon
+                    div.telephone__inner
+                        a.telephone__number.text_bold(href="tel:+74951955722")
+                            | +7 (495) 195-57-22
+                        a.telephone__number.text_bold(href="tel:+79853941057")
+                            | +7 (985) 394-10-57
+
+                div.button
+                    a.button__text(href="#")
+                        |Заказать звонок
 
 
+
+        main.main.page__main
+
+        footer.footer.page__footer
 
         script(src="js/main.js")

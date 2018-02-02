@@ -3,12 +3,113 @@
 @import 'helpers/vars'
 
 
-body
-  font-size: 16px
+.page
+  font-size: 18px
   min-width: 320px
   position: relative
   line-height: 1.75
   font-family: $default-font
   overflow-x: hidden
+  margin: 0
+  padding: 0
+
+.header
+  height: 70px
+  background: $main-color url('../img/header_background.jpg') center no-repeat
+  color: #fff
+
+.header__inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 1170px
+  margin: 0 auto
+
+.menu__hamburger
+  margin-right: 15px
+
+.hamburger
+  display: inline-block
+  vertical-align: middle
+
+.hamburger__box
+  width: 50px
+  height: 50px
+  position: relative
+  border: 2px solid #fff
+  box-sizing: border-box
+  border-radius: 50%
+
+.hamburger__inner, .hamburger__inner::before, .hamburger__inner::after
+  width: 25px
+  height: 4px
+  background-color: #fff
+  position: absolute
+  border-radius: 4px
+
+.hamburger__inner::before, .hamburger__inner::after
+  content: ''
+  display: block
+
+.hamburger__inner
+  top: 50%
+  left: 25%
+
+.hamburger__inner::before
+  top: -8px
+
+.hamburger__inner::after
+  top: 8px
+
+.menu__text
+  display: inline-block
+
+.text
+  display: block
+  font-size: 16px
+  white-space: nowrap
+
+.text_uppercase
+  text-transform: uppercase
+
+.text_bold
+  font-weight: bold
+
+.logo
+  width: 140px
+  height: 70px
+
+.telephone
+  position: relative
+
+.telephone__icon
+  display: block
+  width: 24px
+  height: 24px
+  position: absolute
+  background: url("../img/svg/telephone.svg") 0 0 no-repeat
+  background-size: 100%
+  top: 25%
+  left: 0
+
+.telephone__inner
+  margin-left: 33px
+
+.telephone__number
+  color: #fff
+  display: block
+  text-decoration: none
+  font-size: 18px
+
+.button
+  font-size: 18px
+  border: 2px solid #fff
+  border-radius: 25px
+  background-color: #007558
+  padding: 0 20px
+
+.button__text
+  text-decoration: none
+  color: #fff
 
 @import "helpers/media"
