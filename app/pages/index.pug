@@ -29,12 +29,32 @@ html
     body.page
 
         header.header.page__header
-            div.header__inner
+
+            div.header__inner.container
                 div.menu
                     div.hamburger.menu__hamburger
                         div.hamburger__box
                             div.hamburger__inner
                     div.menu__text Меню
+                    ul.nav
+                        li.nav__item
+                            a.nav__link(#) Главная
+                        li.nav__item
+                            a.nav__link(#) Услуги
+                        li.nav__item
+                            a.nav__link(#) Портфолио
+                        li.nav__item
+                            a.nav__link(#) Стоимость
+                        li.nav__item
+                            a.nav__link(#) Наша команда
+                        li.nav__item
+                            a.nav__link(#) Площадка-партнер
+                        li.nav__item
+                            a.nav__link(#) Контакты
+                        li.nav__item
+                            a.nav__link(#) Не свадебные проекты
+                        li.nav__item
+                            a.nav__link(#) Наша команда
                 div.header__title
                     span.text.text_uppercase.text_bold Группа компаний Emerald
                     span.text Организация свадебных торжеств
@@ -54,8 +74,14 @@ html
 
 
 
-        main.main.page__main
+        main.main
+            section.promo
+                div.promo__inner
+                    h1.promo__title
+                            |Наш 10 летний опыт организации свадебных торжеств<br>
+                            |Поможет Вам сэкономить до 15% от свадебного бюджета<br>
+                            |И около 3-х месяцев, самостоятельной подготовки.
 
-        footer.footer.page__footer
+footer.footer.page__footer
 
         script(src="js/main.js")
