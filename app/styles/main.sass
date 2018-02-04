@@ -199,6 +199,49 @@ button
   color: #fff
   white-space: nowrap
 
+.about
+  background-color: #fff
+  padding: 70px 0
 
+.about__inner
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.video, .information
+  flex-basis: auto
+  width: 45%
+
+.section__title
+  text-align: center
+  font-family: $title-font
+  color: $main-color
+  font-size: 42px
+  font-weight: 400
+  line-height: 1
+
+.information__title
+  margin-top: -20px
+  margin-bottom: 15px
+
+.information__text
+  color: $main-color
+  margin-bottom: 25px
+  line-height: 1.2
+
+.instagram_link
+  display: block
+  color: $main-color
+  text-align: center
+  font-size: 24px
+  font-weight: 700
+  &::before
+    display: inline-block
+    content: ""
+    width: 35px
+    height: 35px
+    margin-right: 10px
+    vertical-align: middle
+    background: url("../img/instagram-icon.png") 0 0 no-repeat
 
 @import "helpers/media"
