@@ -201,7 +201,7 @@ button
 
 .about
   background-color: #fff
-  padding: 70px 0
+  padding: 70px 0 50px
 
 .about__inner
   display: flex
@@ -243,5 +243,78 @@ button
     margin-right: 10px
     vertical-align: middle
     background: url("../img/instagram-icon.png") 0 0 no-repeat
+
+.services
+  background: $main-color url(../img/services_background.jpg) center no-repeat
+  background-size: cover
+  position: relative
+  &::after
+    display: block
+    content: ""
+    width: 100%
+    height: 19px
+    position: absolute
+    top: 0
+    background: url(../img/wave.png) 0 0 repeat-x
+    transform: rotateX(180deg)
+
+.services__inner.container
+  padding: 60px 0 30px
+
+.services_box
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 30px
+
+.item
+  position: relative
+  flex-basis: auto
+  width: 32%
+  box-sizing: border-box
+  color: #fff
+  margin: 0 5px 40px
+  padding-left: 180px
+
+  &::before
+    display: block
+    content: ""
+    position: absolute
+    left: 0
+    width: 165px
+    min-height: 165px
+    background-image: url("../img/spritesheet.png")
+    background-repeat: no-repeat
+
+.item_organisation::before
+  background-position: -355px -5px
+
+.item_host::before
+  background-position: -180px -180px
+
+.item_photograph::before
+  background-position: -355px -180px
+
+.item_decoration::before
+  background-position: -5px -180px
+
+.item_banket::before
+  background-position: -180px -5px
+
+.item_registration::before
+  background-position: -5px -355px
+
+.item_artists::before
+  background-position: -5px -5px
+
+.item:nth-of-type(5n+1), .item:nth-of-type(5n+2)
+  width: 40%
+
+.item__title
+  font-size: 24px
+  font-weight: 700
+
+.section__title_white
+  color: #fff
 
 @import "helpers/media"
