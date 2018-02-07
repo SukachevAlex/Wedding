@@ -229,10 +229,12 @@ button
   margin-bottom: 25px
   line-height: 1.2
 
-.instagram_link
+.instagram
   display: block
-  color: $main-color
   text-align: center
+
+.instagram__link
+  color: $main-color
   font-size: 24px
   font-weight: 700
   &::before
@@ -243,6 +245,12 @@ button
     margin-right: 10px
     vertical-align: middle
     background: url("../img/instagram-icon.png") 0 0 no-repeat
+
+.instagram__text
+  font-size: 28px
+  color: $main-color
+  margin-right: 10px
+  line-height: 1
 
 .services
   background: $main-color url(../img/services_background.jpg) center no-repeat
@@ -258,8 +266,8 @@ button
     background: url(../img/wave.png) 0 0 repeat-x
     transform: rotateX(180deg)
 
-.services__inner.container
-  padding: 60px 0 30px
+.services__inner
+  padding: 60px 0 40px
 
 .services_box
   display: flex
@@ -267,7 +275,7 @@ button
   justify-content: center
   margin-top: 30px
 
-.item
+.service_item
   position: relative
   flex-basis: auto
   width: 32%
@@ -283,38 +291,112 @@ button
     left: 0
     width: 165px
     min-height: 165px
-    background-image: url("../img/spritesheet.png")
+    background-image: url("../img/section_services/spritesheet.png")
     background-repeat: no-repeat
 
-.item_organisation::before
+.service_item_organisation::before
   background-position: -355px -5px
 
-.item_host::before
+.service_item_host::before
   background-position: -180px -180px
 
-.item_photograph::before
+.service_item_photograph::before
   background-position: -355px -180px
 
-.item_decoration::before
+.service_item_decoration::before
   background-position: -5px -180px
 
-.item_banket::before
+.service_item_banket::before
   background-position: -180px -5px
 
-.item_registration::before
+.service_item_registration::before
   background-position: -5px -355px
 
-.item_artists::before
+.service_item_artists::before
   background-position: -5px -5px
 
-.item:nth-of-type(5n+1), .item:nth-of-type(5n+2)
+.service_service_item:nth-of-type(5n+1), .service_item:nth-of-type(5n+2)
   width: 40%
 
-.item__title
+.service_item__title
   font-size: 24px
   font-weight: 700
 
 .section__title_white
   color: #fff
+
+.portfolio
+  position: relative
+  background: url(../img/section_portfolio/portfolio_background.png) 0 0 no-repeat
+  background-size: cover
+  margin-top: -15px
+  margin-bottom: -15px
+  z-index: 1
+
+.portfolio__inner
+  padding: 60px 0 80px
+
+.porfolio_item__wrapper
+  max-width: 970px
+  margin: 30px auto 15px
+  &::after
+    content: ""
+    display: block
+    clear: both
+
+.portfolio_item
+  width: 290px
+  min-height: 230px
+  background-repeat: no-repeat
+  position: relative
+  cursor: pointer
+  float: left
+
+.portfolio_item_wide
+  width: 390px
+
+.portfolio_item_high
+  height: 460px
+  float: right
+
+.portfolio_item_description__wrapper
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 10px 45px 5px 10px
+  background-color: $main-color
+  opacity: 0
+  text-align: right
+  transition: opacity 0.2s linear
+
+.portfolio_item:hover .portfolio_item_description__wrapper
+  opacity: 1
+
+.portfolio_item__description
+  color: #fff
+
+.portfolio_item__icon
+  width: 25px
+  height: 25px
+  background-color: $main-color
+  border: 1px solid #fff
+  border-radius: 50%
+  position: absolute
+  bottom: 10px
+  right: 10px
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    top: 5px
+    left: 5px
+    width: 15px
+    height: 15px
+    background: url(../img/svg/search.svg) 0 0 no-repeat
+    background-size: 100%
+
+
+
 
 @import "helpers/media"
