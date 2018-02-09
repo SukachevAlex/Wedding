@@ -497,4 +497,102 @@ button
   text-align: center
   padding: 0 30px
 
+.team
+  background: url(../img/section_team/team_backgorundBikes.jpg) center no-repeat
+  background-size: cover
+  position: relative
+  &::before
+    display: block
+    content: ""
+    width: 100%
+    height: 19px
+    position: absolute
+    top: -19px
+    background: url(../img/wave_green.png) 0 0 repeat-x
+  &::after
+    display: block
+    content: ""
+    width: 100%
+    height: 19px
+    position: absolute
+    bottom: -19px
+    background: url(../img/wave_green.png) 0 0 repeat-x
+    transform: rotateX(180deg)
+
+.team__inner
+  padding: 50px 0
+  min-height: 1140px
+  background: url(../img/section_team/price_line.png) 0 0 repeat-x
+  background-size: 100%
+  position: relative
+
+.team__wrapper
+  margin-top: 40px
+
+.ceo
+  display: flex
+  position: relative
+  left: 16%
+  margin-bottom: 25px
+
+.ceo__photo
+  width: 260px
+  height: 260px
+  position: absolute
+
+.ceo__text
+  padding-left: 300px
+  max-width: 750px
+  color: $main-color
+  line-height: 1.5
+
+.ceo__name
+  font-size: 24px
+  font-weight: 700
+
+.ceo__post
+  font-size: 20px
+
+.ceo__work
+  margin-bottom: 15px
+
+.ceo__motto
+  font-style: italic
+  text-align: left
+  line-height: 1.15
+
+.team_members__wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+.member
+  width: 24%
+  display: flex
+  flex-direction: column
+
+.member:nth-child(2n)
+  padding-top: 40px
+
+.member__photo
+  width: 165px
+  height: 165px
+  margin: 20px auto 0
+
+.member__text
+  color: $main-color
+  text-align: center
+
+.member__name
+  margin-bottom: 10px
+  font-size: 20px
+  font-weight: 700
+
+.member__post
+  line-height: 1.2
+  margin-bottom: 5px
+
+.member__work
+  line-height: 1.2
+
 @import "helpers/media"
