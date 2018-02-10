@@ -172,9 +172,9 @@ button
   background-color: $main-color
   padding: 0 20px
   cursor: pointer
+
   &:hover
     background-color: #fff
-
 
 .button__text
   text-decoration: none
@@ -293,7 +293,6 @@ button
   color: #fff
   margin: 0 5px 40px
   padding-left: 180px
-
   &::before
     display: block
     content: ""
@@ -498,7 +497,7 @@ button
   padding: 0 30px
 
 .team
-  background: url(../img/section_team/team_backgorundBikes.jpg) center no-repeat
+  background: url(../img/section_team/team_background.jpg) center no-repeat
   background-size: cover
   position: relative
   &::before
@@ -518,6 +517,8 @@ button
     bottom: -19px
     background: url(../img/wave_green.png) 0 0 repeat-x
     transform: rotateX(180deg)
+    z-index: 1
+
 
 .team__inner
   padding: 50px 0
@@ -594,5 +595,91 @@ button
 
 .member__work
   line-height: 1.2
+
+.partner
+  background: url(../img/section_partner/partner_background.jpg) center no-repeat
+  background-size: cover
+  position: relative
+
+.partner__inner
+  padding: 61px 0 85px
+
+.photo__wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 30px 5px 45px
+
+
+.partner__photo
+  width: 27%
+  height: 220px
+  background-repeat: no-repeat
+  background-size: cover
+
+.partner__photo_wide
+  width: 39%
+
+.features__wrapper
+  margin-bottom: 50px
+
+.partner__information
+  margin-bottom: 5px
+
+.partner-features__wrapper
+  display: flex
+  flex-wrap: wrap
+  counter-reset: partner__counter
+  box-sizing: border-box
+
+.partner-feature__line
+  margin-bottom: 30px
+  display: flex
+  justify-content: center
+
+
+.partner-feature
+  width: 41%
+  box-sizing: border-box
+  position: relative
+  margin-right: 35px
+  counter-reset: feature
+  counter-increment: partner__counter
+
+
+.partner-feature__line:nth-child(2n + 1) .partner-feature
+  margin-right: 70px
+
+.partner-feature__line:nth-child(2n)
+  margin-left: 35px
+    
+.partner-feature__line:nth-child(2n+1) .partner-feature:first-child,
+.partner-feature__line:nth-child(2n) .partner-feature:nth-child(2)
+  width: 25%
+
+.partner-feature__text
+  color: $main-color
+  position: relative
+  padding-left: 60px
+  &::before
+    display: block
+    content: counter(partner__counter)
+    width: 50px
+    height: 50px
+    position: absolute
+    left: 0
+    top: 12%
+    line-height: 50px
+    color: #fff
+    font-weight: 700
+    font-size: 30px
+    text-align: center
+    background-color: $main-color
+    border-radius: 50%
+
+.partner__text
+  font-size: 22px
+  color: $main-color
+  text-align: center
 
 @import "helpers/media"
