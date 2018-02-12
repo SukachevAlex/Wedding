@@ -1,7 +1,19 @@
 var menu = document.querySelector('.menu');
-var hamburger__inner = document.querySelector('.hamburger__inner');
+var hamburger_inner = document.querySelector('.hamburger__inner');
 var nav = document.querySelector('.nav');
 menu.addEventListener('click', function() {
-    hamburger__inner.classList.toggle('is-active');
+    hamburger_inner.classList.toggle('is-active');
     nav.classList.toggle('is-visible');
 });
+
+
+$(".feedback-slider-js").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: '.feedback-slider__prev',
+    nextArrow: '.feedback-slider__next'
+});
+

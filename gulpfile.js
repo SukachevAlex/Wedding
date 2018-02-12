@@ -17,12 +17,12 @@ $.path.tasks.forEach(function (taskPath) {
 
 $.gulp.task('dev', $.gulp.series(
     'clean',
-    $.gulp.parallel('sass:dev', 'pug', 'scripts', 'img:dev', 'fonts')));
+    $.gulp.parallel('sass:dev', 'pug', 'jquery', 'libs:dev', 'scripts', 'img:dev', 'fonts')));
 
 
 $.gulp.task('build', $.gulp.series(
     'clean',
-    $.gulp.parallel('pug', 'fonts' ,'sass:build', 'scripts:lib', 'scripts', 'img:build'),
+    $.gulp.parallel('pug', 'jquery', 'fonts' ,'sass:build', 'libs:build', 'scripts', 'img:build'),
     $.gulp.parallel('watch', 'browser-sync')
 ));
 
