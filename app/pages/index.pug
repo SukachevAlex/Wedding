@@ -451,8 +451,38 @@ html
                             input.consultation-form__field.consultation-form__field_phone(type="text" placeholder="Номер телефона" name="name" required)
                             input.consultation-form__button.button(type="submit" value="Получить консультацию")
 
-
         footer.footer.page__footer
+            div.footer__inner.container
+                div.logo
+                    img.logo__image.logo__image_footer(src="../img/header__logo.png" srcset="../img/header__logo@2x.png 2x" alt="Company logo")
+                div.footer__title
+                    span.text.text_uppercase.text_bold Группа компаний Emerald
+                    span.text Организация свадебных торжеств
+                div.telephone
+                    div.telephone__inner
+                        a.telephone__number.text_bold.telephone__number_icon-phone(href="tel:+74951955722")
+                            | +7 (495) 195-57-22
+                        a.telephone__number.text_bold.telephone__number_icon-smartphone(href="tel:+79161724569")
+                            | +7 (916) 172-45-69
+                        a.telephone__number.text_bold.telephone__number_icon-smartphone(href="tel:+79853941057")
+                            | +7 (985) 394-10-57
+                ul.social
+                    li.social__item
+                        a.social__link.social__link_vk(href="https://vk.com")
+                    li.social__item
+                        a.social__link.social__link_instagram(href="https://instagram.com/")
+                    li.social__item
+                        a.social__link.social__link_facebook(href="https://facebook.com")
+                    li.social__item
+                        a.social__link.social__link_whatsapp(href="https://whatsapp.com")
+                    li.social__item
+                        a.social__link.social__link_youtube(href="https://youtube.com/")
+                div.copyright
+                    div.copyright__text
+                        span.copyright__icon &copy;
+                        |2017  Все права защищены
+                    a.copyright__link(href="#") Политика конфиденциальности
+
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
