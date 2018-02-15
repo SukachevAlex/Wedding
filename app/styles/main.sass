@@ -842,6 +842,7 @@ button
 
 .arrow-down
   margin: 0 auto
+  display: block
   width: 32px
   height: 52px
   background: url(../img/section_projects/arrow_down.png) 0 0 no-repeat
@@ -865,10 +866,49 @@ button
 .consultation__list
   max-width: 460px
 
-.consultation-form
+.consultation-form__wrapper
   max-width: 360px
-  max-height: 450px
-  padding: 45px 30px 0
+  height: 450px
+  background-color: #fff
+  color: $main-color
+  border-radius: 15px
+  text-align: center
+  position: relative
+
+.consultation-form
+  padding: 40px 30px 0
+
+.consultation-form_success
+  padding: 40px 40px 100px 50px
+  font-size: 28px
+  display: none
+
+
+.consultation-form__close
+  display: block
+  width: 53px
+  height: 53px
+  position: absolute
+  right: -15px
+  top: -20px
+  background-color: $main-color
+  border-radius: 50%
+  border: 1px solid #fff
+  font-size: 32px
+  line-height: 48px
+  color: #fff
+  cursor: pointer
+
+.consultation-form__img
+  width: 230px
+  height: 230px
+  margin: 0 auto
+  background: url(../img/section_secrets/bike.png) 0 0 no-repeat
+
+.consultation-form__text
+  display: block
+
+  line-height: 1.2
 
 .consultation__list
   color: #fff
@@ -882,9 +922,6 @@ button
 .consultation__item
   margin-bottom: 20px
 
-.consultation-form
-  background-color: #fff
-  border-radius: 15px
 
 .consultation-form__title
   font-size: 27px
@@ -943,6 +980,8 @@ button
 
 .footer__title
   color: $gray-color
+
+
 
 .social__item
   margin-right: 10px
@@ -1008,6 +1047,7 @@ button
   text-align: center
   color: $gray-color
   font-size: 16px
+  margin-top: 20px
 
 .copyright__icon
   font-size: 18px
@@ -1020,6 +1060,12 @@ button
 .copyright__link
   color: inherit
 
+.popup__form
+  width: 100%
+  max-width: 360px
+  margin: 50px auto
+  .mfp-close
+    display: none
 
 
 @import "helpers/media"
