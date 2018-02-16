@@ -5,6 +5,9 @@
 *, *::after, *::before
   box-sizing: border-box
 
+a
+  outline: none
+
 h1, h2, h3, h4, h5, h6
   padding: 0
   margin: 0
@@ -21,6 +24,12 @@ input,
 select,
 button
   outline: none
+
+html, body
+  width: 100%
+
+section
+  width: 100%
 
 .page
   font-size: 18px
@@ -42,6 +51,7 @@ button
   display: flex
   justify-content: space-between
   align-items: center
+  padding: 0 10px
 
 .container
   max-width: 1170px
@@ -193,8 +203,9 @@ button
   width: 100%
   height: 19px
   position: absolute
-  bottom: 0
+  bottom: -1px
   background: url(../img/wave.png) 0 0 repeat-x
+
 
 .promo__inner
   position: absolute
@@ -874,6 +885,7 @@ button
   border-radius: 15px
   text-align: center
   position: relative
+  margin: 15px
 
 .consultation-form
   padding: 40px 30px 0
@@ -904,6 +916,7 @@ button
   height: 230px
   margin: 0 auto
   background: url(../img/section_secrets/bike.png) 0 0 no-repeat
+  background-size: cover
 
 .consultation-form__text
   display: block
@@ -1038,9 +1051,6 @@ button
   &::before
     background: url(../img/svg/smartphone.svg) no-repeat
     background-size: 100%
-
-
-
 
 .copyright
   width: 100%
