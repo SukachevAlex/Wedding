@@ -22,7 +22,6 @@ $( document ).ready(function() {
         nextArrow: '.feedback-slider__next'
     });
 
-
     $('.consultation-form').on('submit', function() {
         $(this).hide();
         $(this).parent().find('.consultation-form_success').show();

@@ -239,6 +239,7 @@ section
   font-size: 42px
   font-weight: 400
   line-height: 1
+  margin: 0 5px
 
 .information__title
   margin-top: -20px
@@ -435,7 +436,8 @@ section
 .prices__wrapper
   display: flex
   justify-content: space-between
-  margin-top: 30px
+  flex-wrap: wrap
+  margin: 30px 15px
 
 .price_item
   width: 31%
@@ -446,6 +448,7 @@ section
   display: flex
   flex-direction: column
   justify-content: space-between
+  margin-bottom: 20px
 
 .price_item__title
   font-size: 24px
@@ -471,28 +474,23 @@ section
 
 .price__box
   margin: 30px auto 0
-  width: 260px
-  height: 61px
+  width: 100%
+  max-width: 260px
   text-align: center
   background: url(../img/section_price/price_box.png) 0 0 no-repeat
   background-size: 100%
 
 .price__value
+  display: block
+  position: relative
   font-size: 42px
   font-weight: 700
-  line-height: 1.45
   color: #fff
+  line-height: 1.5
 
-.price__icon
-  margin-left: 15px
-  display: inline-block
-  width: 33px
-  height: 33px
-  background: url(../img/svg/ruble.svg) 0 0 no-repeat
-  background-size: 100%
 
 .consultation__information
-  margin: 35px 0 30px
+  margin: 35px 20px 30px
   text-align: center
 
 .consultation__text
@@ -729,7 +727,6 @@ section
   .feedback-slider__control
     position: absolute
     top: 45%
-
     width: 45px
     height: 45px
     background: url(../img/svg/arrow.svg) 0 0 no-repeat
@@ -816,13 +813,11 @@ section
   margin: 20px 10px 30px
   display: flex
   justify-content: center
+  flex-wrap: wrap
 
 .project__item
   width: 255px
-  margin-right: 65px
-  &:last-child
-    margin-right: 0
-
+  margin: 15px 30px
 
 .project__photo
   width: 165px
@@ -883,9 +878,12 @@ section
   justify-content: space-around
   align-items: center
   margin-top: 70px
+  flex-wrap: wrap
 
 .consultation__list
   max-width: 460px
+  margin: 0 15px 20px
+
 
 .consultation-form__wrapper
   max-width: 360px
@@ -1004,7 +1002,8 @@ section
 .footer__title
   color: $gray-color
 
-
+.social
+  margin-top: 10px
 
 .social__item
   margin-right: 10px
