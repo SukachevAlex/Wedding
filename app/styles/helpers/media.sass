@@ -1,7 +1,13 @@
 @import "vars"
 
 @media only screen and (max-width : 1200px)
-  /**/
+  .service_item
+    padding-left: 170px
+    width: 32%
+    &::before
+      transform: scale(0.8)
+
+
 
 @media only screen and (max-width : 992px)
   .header__title
@@ -11,7 +17,25 @@
   .promo__title
     font-size: 28px
 
+  .about
+    padding: 50px 0
+
+  .service_item
+    width: 40%
+
+  .portfolio_item__wrapper
+    grid-template-columns: auto auto
+    grid-template-rows: 230px
+  .portfolio_item_high
+    grid-column: 2/3
+    grid-row: 3/5
+  .portfolio_item_wide
+    width: 290px
+
+
 @media only screen and (max-width : 768px)
+  .promo
+    min-height: 550px
   .telephone
     display: none
   .header__inner
@@ -27,8 +51,34 @@
   .promo__inner
     display: none
 
+  .about
+    padding: 40px 0 50px
+  .information,
+  .video
+    width: 90%
+  .information
+    order: 1
+    margin-bottom: 30px
+  .video
+    order: 2
+  .information__text
+    margin-bottom: 20px
+
+  .service_item, .service_service_item:nth-of-type(5n+1), .service_item:nth-of-type(5n+2)
+    width: 90%
+
+  .portfolio_item__wrapper
+    grid-template-columns: auto
+  .portfolio_item_high
+    grid-column: 1/1
+    grid-row: auto
+  .portfolio_item:nth-of-type(2n)
+    display: none
+
 
 @media only screen and (max-width : 480px)
+  .promo
+    min-height: 500px
   .menu__text
     display: none
   .nav
@@ -48,6 +98,23 @@
   .consultation-form__img
     width: 180px
     height: 180px
+
+  .information__text
+    margin-bottom: 15px
+
+  .service_item
+    padding-left: 0
+    padding-top: 180px
+    text-align: center
+    &::before
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+
+  .instagram__link
+    font-size: 22px
+  .instagram__text
+    font-size: 18px
 
 @media only screen and (max-width : 320px)
   .header__button
