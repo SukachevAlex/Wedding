@@ -7,6 +7,10 @@
     &::before
       transform: scale(0.8)
 
+  .team__inner
+    background: none
+  .member:nth-child(2n)
+    padding-top: 0
 
 
 @media only screen and (max-width : 992px)
@@ -41,6 +45,17 @@
 
   .consultation__list
     font-size: 24px
+
+  .member
+    width: 32%
+
+  .partner__photo_wide
+    order: 3
+  .photo__wrapper
+    justify-content: center
+
+  .feedback-slider__item
+    height: 100%
 
 @media only screen and (max-width : 768px)
   .promo
@@ -99,6 +114,25 @@
 
   .projects__information
     padding: 0 20px
+
+  .member
+    width: 49%
+  .ceo__text
+    text-align: center
+
+  .partner-feature__line .partner-feature
+    margin-right: 0
+  .partner-feature__line:nth-child(2n)
+      margin-left: 0
+  #partner .partner-feature
+    width: 49%
+  .partner-feature__line:nth-child(2n+1) .partner-feature
+    margin-right: 0
+  .partner-feature__line
+    justify-content: space-around
+
+  .feedback-slider__photo, .feedback-slider__text
+    width: 90%
 
 @media only screen and (max-width : 480px)
 
@@ -164,6 +198,14 @@
   .social__item
     margin-right: 3px
     margin-top: 10px
+
+  .member
+    width: 90%
+  .partner__photo_wide
+    min-width: 261px
+
+  #partner .partner-feature
+    width: 90%
 
 @media only screen and (max-width : 320px)
   .header__button

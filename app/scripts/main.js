@@ -19,7 +19,31 @@ $( document ).ready(function() {
         slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: '.feedback-slider__prev',
-        nextArrow: '.feedback-slider__next'
+        nextArrow: '.feedback-slider__next',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false
+                }
+            },
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ]
     });
 
     $('.consultation-form').on('submit', function() {
