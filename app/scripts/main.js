@@ -20,6 +20,7 @@ $( document ).ready(function() {
         slidesToScroll: 1,
         prevArrow: '.feedback-slider__prev',
         nextArrow: '.feedback-slider__next',
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1200,
@@ -28,21 +29,7 @@ $( document ).ready(function() {
                     slidesToScroll: 1,
                     infinite: false
                 }
-            },
-            // {
-            //     breakpoint: 600,
-            //     settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 2
-            //     }
-            // },
-            // {
-            //     breakpoint: 480,
-            //     settings: {
-            //         slidesToShow: 1,
-            //         slidesToScroll: 1
-            //     }
-            // }
+            }
         ]
     });
 
@@ -70,4 +57,8 @@ $( document ).ready(function() {
     $('#popup__close').on('click', function() {
         $.magnificPopup.close();
     })
+});
+
+$(window).on('load', function() {
+   $('#preloader').delay(1000).fadeOut('slow');
 });
